@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, rebeccapurple, skyblue);
+}
+.container{
+    /* border: 1px solid black; */
+    max-width: 700px;
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.container > .header {
+    font-size: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+.container > .header::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(120deg, rebeccapurple, skyblue);
+}
+.first-grid, .second-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-box{
+    height: 40px;
+    width: 320px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.574);
+    font-size: 16px;
+    padding-left: 10px;
+    border-bottom-width: 2px;
+}
+.input-box:focus{
+    border-color: rebeccapurple;
+}
+.input-details > span{
+    display: block;
+    margin-bottom: 5px;
+}
+.state-details{
+    margin-top: 20px;
+}
+.state-details > label{
+   margin: 0 20px 0 0;
+}
+.button{
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(120deg, rebeccapurple, skyblue);
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-div{
+    margin-top: 20px;
+}
+.button:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(-120deg, rebeccapurple, skyblue);
+}
+@media only screen and (max-width: 750px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <main class="container">
+        <div class="header">Registration</div>
+        <div class="grid">
+            <div class="first-grid">
+                <div class="input-details">
+                    <span class="details">Full Name</span> 
+                    <input type="text" class="input-box" required placeholder="Enter your name" autofocus>
+                </div>
+                <div class="input-details">
+                    <span class="details">Email</span>
+                    <input type="email" class="input-box" required placeholder="Enter your email">
+                </div>
+                <div class="input-details">
+                    <span class="details">Password</span>
+                    <input type="password" class="input-box" required placeholder="Enter your password">
+                </div>
+            </div>
+            <div class="second-grid">
+                <div class="input-details">
+                    <span class="details">Username</span>
+                    <input type="text" class="input-box" required placeholder="Enter your username">
+                </div>
+                <div class="input-details">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" class="input-box" required placeholder="Enter your phone number">
+                </div>
+                <div class="input-details">
+                    <span class="details"> Confirm Password</span>
+                    <input type="password" class="input-box" required placeholder="Confirm your password">
+                </div>
+            </div>
+        </div>
+        <div class="state-details">
+            <label for="state"> state  </label>
+            <select name="states" id="" required>
+                <option value="State" selected disabled>State</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharashtra">Maharashtra</option>
+            </select>
+        </div>
+        <div class="button-div">
+            <input type="submit" class="button" value="Register">
+        </div>
+    </main>
+</body>
+</html>
